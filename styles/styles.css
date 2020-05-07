@@ -42,14 +42,14 @@ body {
 }
 
 .menu-sup {
-    display: flex;
-    height: 70px;
+    display: flex;    
     width: 100%;
     max-width: var(--max-width);      
     box-shadow: 0 1px 5px rgba(123, 123, 123, 0.5);
     position: fixed;
     background-color: white;
     z-index: 100;
+    padding: .8em;
 }
 
 .menu-container,
@@ -69,6 +69,14 @@ body {
 .logo {    
     flex: 1 1 15%;
     justify-content: flex-end;    
+}
+
+.menu-action {
+    display: none;
+}
+
+#ra1 {
+    display: none;
 }
 
 .button {    
@@ -99,8 +107,7 @@ button {
     height: 50px;
     font-size: var(--font-size);
     background-color: #139DFF;
-    border: none;
-    
+    border: none;    
     color: var(--ligth-font-color);
     border-radius: 5px;
 }
@@ -122,17 +129,22 @@ button {
 .title,
 .sub-title,
 .info {    
-    font-family: var(--my-font) ;    
+    font-family: var(--my-font);    
+}
+
+.title {
+    font-size: var(--font-size-sub);    
 }
 
 .sub-title {
     font-size: var(--font-size-sub);
     font-weight: 300;
-    margin-bottom: .2em;
+    margin-bottom: .5em;
 }
 
 .info {
-    margin-bottom: 1em;
+    font-size: var(--font-size);
+    margin-bottom: 2em;
 }
 
 .services {
@@ -175,9 +187,8 @@ button {
 }
 
 .service img {
-    margin-bottom: .8em;
-    width: 70px;
-    height: 70px;
+    margin-bottom: 1em;
+    width: 70px;    
 }
 
 .service p {
@@ -189,16 +200,16 @@ button {
     flex-wrap: wrap;    
     padding-top: 2em;
     width: 100%;
-    max-width: var(--max-width);  
+    max-width: var(--max-width); 
+    margin: 3em 0;
 }
 
 .poster, .welcome-info {
     display: flex;
     justify-content: center;
-    flex: 1 0 50%;
+    flex: 1 1;
     font-family: var(--my-font);
-    font-size: var(--font-size);
-    height: var(--height-section-size);
+    font-size: var(--font-size);    
 }
 
 .images{
@@ -211,8 +222,7 @@ button {
     background-image: url('../img/médicos2.jpg');    
     background-size: 100%;
     background-position: center;
-    left: 100px;
-    
+    left: 100px;    
 }
 
 .images:last-child {    
@@ -382,6 +392,7 @@ span {
     cursor: pointer;    
     text-align: center;
     line-height: 60px;
+    width: 100%;
 }
 
 [type="radio"] {
@@ -390,8 +401,7 @@ span {
 
 
 .panel {
-    display: none;
-    flex-wrap: wrap;
+    display: none;    
     background-color: var(--ligth-font-color);    
     padding: 4em 5em;
     justify-content: space-between;
@@ -402,8 +412,7 @@ span {
 }
 
 .tb-img {
-    width: 60px;
-    height: 60px;
+    width: 60px;    
     background-color: var(--service-color2);
     border-radius: 50%;
     display: flex;
@@ -411,7 +420,7 @@ span {
 }
 
 .tb-img img {    
-    width: 40px;
+    width: 80%;
     margin: auto;    
 }
 
@@ -421,7 +430,7 @@ span {
 
 .tab-image {
     display: flex;
-    justify-content: center;        
+    justify-content: center;    
 }
 
 .tab-image img {
@@ -462,8 +471,7 @@ span {
 
 .doctor-section {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center;    
     padding: .5em 2em;
 }
 
@@ -512,8 +520,8 @@ span {
 }
 
 .btn-container, .srv {
-    flex: 1;
     display: flex;    
+    flex: 1;
 }
 
 .srv {

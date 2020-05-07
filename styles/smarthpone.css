@@ -1,4 +1,245 @@
-@media (max-width: 320px){    
+@media (max-width: 420px){         
     
+    :root {
+        --font-size: .8em;
+        --font-size-sub:1.5rem;
+    }                   
+
+   .menu-sup {
+       flex-direction: column;       
+   }
+
+   .logo {
+       display: flex;
+       justify-content: left;
+       justify-content: space-between;
+   }
+
+   .menu {
+       flex-direction: column;
+   }
+
+   .menu li {
+       width: 100%;
+       padding: 1em;
+   }
+
+   .menu-action {
+       display: block;
+   }
+
+   .button {
+       justify-content: center;       
+   }
+
+   .menu-container, .button {
+       display: none;
+   }
+
+   .menu-action img {
+       width: 25px;
+   }
+
+   #ra1:checked ~ * {
+       display: flex;    
+   }
+
+   .home {       
+       padding: 2.5rem 1rem;
+       background-position: 53%;
+       height: initial;
+   }
+
+   button {
+       width: 140px;
+       height: 35px;
+   }
+
+   .service {
+       padding: 4em 3em;
+   }
+
+   .service img {
+       width: 80px;
+   }
+
+   .welcome {
+       padding: 0 0 2em;
+       margin: .5em 0;
+       flex-direction: column;
+   }
+   
+   .poster {
+       display: flex;
+       justify-content: center;
+       align-items: center;     
+       
+   }
+
+   .images:first-child {
+       display: none;
+   }
+   
+   .images:last-child {
+       top: auto;       
+       right: auto;
+       width: 200px;
+       background-repeat: no-repeat;
+   }
+
+   .welcome-info {
+       padding: 0 0 0 1.5em;
+   }
+
+   .list {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 3em;
+   }
+
+   .bestcare {
+       padding-bottom: .5em;
+   }
+
+   .legend {
+       padding-bottom: 1.5em;
+   }
+
+   .card {
+       width: 300px;
+       font-size: 1.2em;
+   }
+
+   .dep-info {
+       width: 80%;
+       font-size: .8em;
+   }
+
+   .banner-health {
+       font-size: var(--font-size);       
+       background-size: auto;
+       background-position: right;
+       height: 400px;
+       margin-bottom: 0;
+   }
+
+   .tab-container {
+       width: 100%;
+   }
+
+   .text {
+       width: 80%;
+   }
+
+   .line {
+       width: 40px;
+   }
+
+   .tbls {
+       flex-direction: column;
+       height: initial;
+       width: 350px;
+       margin: 0 auto;
+   }
+   
+   .tab-info {
+       margin-bottom: 1.5em;
+   }
+   
+   .tab-image img {
+        height: 180px;
+    }
+
+    .tab, .tab label{
+        line-height: 40px;
+    }
+
+    .tb-img {
+        width: 40px;
+        height: 40px;        
+    }
+
+    .panel {
+        flex-direction: column;
+        padding: 3em;
+    }
+
+    .doctor-section {        
+        padding: 1em 0;
+        margin: 0;
+    }
+
+    .doctor {
+        display: none;        
+        margin: 0;
+        padding-bottom: 1.5em;
+    }
+
+    .doctor:nth-child(1) {        
+        display: block;
+        width: 280px;        
+    }
+    
+    .doc-bar {
+        width: 100%;
+        padding: 2em .8em;
+    }
+
+    .doc-bar h2 {
+        font-size: 1em;
+    }
+
+    .name, .mayor {
+        font-size: .8em;
+        padding: 0;
+    }
+
+    .emergency, .appointment {
+        flex-direction: column;        
+        height: 180px;        
+        align-items: flex-start;        
+        padding-left: 2em;
+    }
+
+    .btn-container, .srv {     
+        padding: 0;
+        justify-content: space-around;    
+    }
+
+    .srv {
+        flex: 1 1 40%;
+    }   
+
+    .srv h3 {
+        font-weight: bold;
+    }
+
+    .social-main {
+        padding-left: 1.5em;
+        flex-direction: column;
+        font-size: var(--font-size);
+    }
+
+    .so-item {
+        padding-bottom: 2em;        
+    }
+
+    .so-item h3 {
+        padding-bottom: .5em;
+    }
+
+    .so-item p {
+        padding-bottom: 1em;
+    }
+    
+    .copy-p {        
+        padding: .5em 3em;
+        line-height: 2.1em;
+        font-size: .7em;
+    }
+
+    .copy-p img {
+        width: 10px;
+    }
 }
 
